@@ -26,6 +26,7 @@ function showSingle(produkts) {
     img.src = `imgs/${product.img}`;
   });
 
-  document.querySelector("#product_title").textContent = product.productname;
-  document.querySelector("#product_description").textContent = product.description;
+  document.querySelector(".product_title").textContent = product.productname;
+  document.querySelector(".product_title_mobile").textContent = product.productname;
+  document.querySelector(".product_description").textContent = product.description;
 }
