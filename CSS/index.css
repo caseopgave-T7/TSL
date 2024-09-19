@@ -4,6 +4,7 @@ main {
 body {
   background-color: #4589d3;
   margin: 0;
+  font-family: Helvetica, sans-serif;
 }
 .index_h1 {
   color: #233248;
