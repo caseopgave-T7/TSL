@@ -3,7 +3,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,7 +34,7 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #333;
+ 
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
@@ -61,12 +60,49 @@ nav {
 .burger {
   display: none;
 }
+
+
+
+.burger1, .burger2, .burger3{
+  width: 20px;
+  height: 3px;
+  background-color: white;
+}
+
+.burger2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.burgermenu{
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .menu {
     display: none;
   }
-  .burger {
+  .menu.active {
     display: block;
+    position: absolute;
+    background-color: #fff;
+    top: 107px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .burger {
+    display: inline-block;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin: 2rem auto;
+    background-color: white;
   }
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
@@ -83,22 +119,13 @@ nav {
     transition: 0.2s linear;
   }
 
-  nav.active .menu {
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
 
-  nav.active .menu li {
+
+  .menu.active .menu li {
     margin: 10px 20px;
   }
 
-  nav.active .menu a {
+  .menu.active .menu a {
     font-size: 24px;
   }
 }
