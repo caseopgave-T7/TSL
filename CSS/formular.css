@@ -1,0 +1,348 @@
+/* main {
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input,
+textarea {
+  background-color: #f4f4f4;
+}
+
+.form-felt1 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-felt2 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+  .form-felt1 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form-felt2 {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+.button_div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.form-felt-button {
+  width: 140px;
+  height: 45px;
+  font-family: Arial;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-felt-button:hover {
+  background-color: #8a898f;
+  box-shadow: 0px 12px 18px #706d6d;
+  color: #000000;
+  transform: translateY(-5px);
+}  */
+
+/* /* main {
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input,
+textarea {
+  background-color: #f4f4f4;
+}
+
+.form-felt1 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-felt2 {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 600px) {
+  .form-felt1 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .form-felt2 {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+/* Grundlæggende mobile-first styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color:#0762c8; 
+  color: rgb(35, 50, 72);
+
+}
+
+header{
+  background-color: rgb(35, 50, 72);
+  padding: 15px;
+  display: flex;
+  
+}
+
+.logo img{
+  width: 140px;
+}
+
+.navigation{
+  display: none;
+}
+
+.burger1,.burger2,.burger3{
+  width: 20px;
+  height: 3px;
+  background-color: aliceblue;
+
+}
+
+.burger2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.formular {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: rgb(35, 50, 72);
+  line-height: 1.5;
+ 
+}
+
+a{
+  
+  margin-bottom: 20px;
+  color: rgb(35, 50, 72);
+  line-height: 1.5;
+}
+
+
+.formular div {
+  margin-bottom: 15px;
+}
+
+.navn-boks, .studionavn-boks, .lejeperiode-boks {
+  display: block;
+}
+
+span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(234, 80, 69); /* Orange knap */
+  border: none;
+  border-radius: 5px;
+  color: rgb(35, 50, 72);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(234, 80, 69); /* Mørkere orange ved hover */
+}
+
+/* Tablet og større skærmjusteringer */
+@media (min-width: 768px) {
+  h1 {
+      font-size: 84px;
+  }
+
+  p {
+      font-size: 24px;
+  }
+
+  input {
+      font-size: 16px;
+  }
+
+  button {
+      font-size: 18px;
+  }
+
+  header{
+    background-color: rgb(35, 50, 72);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  header a{
+    color:  rgb(234, 80, 69);
+    text-decoration: none;
+    
+  
+  }
+  
+  .logo img{
+    width: 170px;
+  }
+
+  .navigation{
+    display: inline;
+  }
+
+  .navigation a{
+  padding: 0px 90px;
+  font-size: 24px;
+  
+  }
+
+  .formular{
+    max-width: 100%;
+    padding: 20px;
+}
+
+.skema{
+max-width: 400px;
+}
+
+.burgermenu{
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+}
+
+
+
+
+
+
+/**Button**/
+html,
+body {
+  height: 100%;
+}
+
+.button_div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.form-felt-button {
+  width: 140px;
+  height: 45px;
+  font-family: Arial;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: rgb(35, 50, 72);
+  background-color: #000000;
+  border: none;
+  border-radius: 0px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.form-felt-button:hover {
+  background-color: #8a898f;
+  box-shadow: 0px 12px 18px #706d6d;
+  color: #000000;
+  transform: translateY(-5px);
+}  
