@@ -17,7 +17,7 @@ header{
   background-color: rgb(35, 50, 72);
   padding: 15px;
   display: flex;
-  
+  font-family: Helvetica, sans-serif;
   
 }
 
@@ -86,16 +86,17 @@ input {
 button {
   width: 100%;
   padding: 10px;
-  background-color: rgb(234, 80, 69); /* Orange knap */
+  background-color: #ff671f; /* Orange knap */
   border: none;
   border-radius: 5px;
   color: rgb(35, 50, 72);
   font-size: 16px;
   cursor: pointer;
+  font-family: Helvetica, sans-serif;
 }
 
 button:hover {
-  background-color: rgb(234, 80, 69); /* Mørkere orange ved hover */
+  background-color: #ff671f; /* Mørkere orange ved hover */
 }
 
 @media (max-width:799px){
@@ -128,8 +129,10 @@ button:hover {
   
   
   header a{
-    color:  rgb(234, 80, 69);
+    color: #ff671f;
     text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
     
   
   }
