@@ -1,0 +1,40 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.top {
+  background-color: blueviolet; /* Change or remove this */
+}
+
+.bottom {
+  background-color: red; /* Change or remove this */
+}
+
+img {
+  width: 100px; /* Change or remove this */
+}
+
+body {
+  background-color: #4589d3;
+}
+
+/* Desktop TILPASNINGER */
+h1 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 24px;
+}
+
+h2 {
+  font-weight: 300;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

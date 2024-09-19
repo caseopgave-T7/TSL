@@ -20,7 +20,11 @@ function showSingle(produkts) {
   const product = produkts[0];
   console.log(id, product);
 
-  document.querySelector("img").src = `imgs/${product.img}`;
+  const images = document.querySelectorAll(".produktbillede");
+
+  images.forEach((img) => {
+    img.src = `imgs/${product.img}`;
+  });
 
   document.querySelector("#product_title").textContent = product.productname;
   document.querySelector("#product_description").textContent = product.description;
