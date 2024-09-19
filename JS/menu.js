@@ -1,10 +1,16 @@
-const burger = document.querySelector(".burger"); /*refererer til burger-ikonet*/
-const nav = document.querySelector("nav"); /* refererer til nav-elementet (navigationsmenuen)*/
-const menu = document.querySelector(".menu"); /*refererer til elementet med klassen menu, som indeholder navigationslinksene*/
-const links = document.querySelectorAll(".menu li a"); /*refererer til alle a-elementer inde i li-elementer inden for menuen*/
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+const menu = document.querySelector(".menu");
+const links = document.querySelectorAll(".menu li a");
 
 burger.addEventListener("click", () => {
-  /* tilføjer en klik-begivenhedslytter til burger-ikonet*/
-  burger.classList.toggle("active"); /*tilføjer klassen active til burger-ikonet*/
-  nav.classList.toggle("active"); /*gør det samme for navigationsmenuen*/
+  burger.classList.toggle("active");
+  nav.classList.toggle("active");
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    burger.classList.remove("active");
+    nav.classList.remove("active");
+  });
 });
