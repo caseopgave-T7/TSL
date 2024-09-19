@@ -1,0 +1,171 @@
+main {
+}
+
+body {
+  background-color: #4589d3;
+  margin: 0;
+}
+h1 {
+  color: #233248;
+}
+
+h2 {
+  color: #ff671f;
+  margin: 10px;
+}
+
+p {
+  color: #ff671f;
+  margin: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+button.CTA_blå {
+  background-color: #4589d3; /* Blå baggrundsfarve */
+  color: #233248;
+  border: none; /* Ingen kant */
+  border-radius: 0; /* Skarpe hjørner */
+  padding: 10px 20px; /* Afstand omkring teksten */
+  font-size: 20px; /* Skriftstørrelse */
+  text-align: center; /* Tekst centreret */
+  cursor: pointer; /* Pointersymbol ved hover */
+  width: 200px;
+}
+
+.CTA_blå_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+/* Styling af sektion med info om Tech & Story Lab */
+
+.baggrundsbillede {
+  position: relative; /* Gør det muligt at placere tekst over billedet */
+  background-image: url("../billeder/Index/index3.png"); /*Brug billedet som baggrund */
+  background-size: cover; /* Sørger for at billedet dækker hele containeren */
+  background-position: center; /* Centrerer billedet */
+  height: 500px; /* Højde på sektionen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baggrundsbillede_tekst {
+  position: absolute;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 75px;
+}
+
+/*Styling af sektion med visual map og tekst boks - grid 1_1 */
+
+.blå_tekstboks {
+  background-color: #233248;
+  text-align: right;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Styling af sektion m. baggrundsbillede og info om studiekort */
+
+.baggrundsbillede_2 {
+  position: relative; /* Gør det muligt at placere tekst over billedet */
+  background-image: url("../billeder/Index/indexbillede2.png"); /*Brug billedet som baggrund */
+  background-size: cover; /* Sørger for at billedet dækker hele containeren */
+  background-position: center; /* Centrerer billedet */
+  height: 500px; /* Højde på sektionen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.baggrundsbillede_tekst_2 {
+  position: absolute;
+  text-align: left;
+}
+
+/* Styling at sektion med kontaktoplysninger */
+
+.grid_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.kontakt_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrerer indholdet horisontalt */
+  text-align: center;
+}
+
+.kontaktinfo {
+  color: #ffffff; /* Hvid tekstfarve */
+  margin: 0;
+}
+
+.kontakt_billede {
+  width: 200px; /* Bredde på billedet */
+  height: 200px; /* Højde på billedet */
+  object-fit: cover; /* Sørger for at billedet holder sit forhold */
+  margin-bottom: 10px; /* Afstand mellem billede og tekst */
+}
+
+@media (max-width: 799px) {
+  h1 {
+    font-size: 80px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .grid_1_2 {
+    grid-template-columns: 1fr; /* En kolonne for mindre skærme */
+  }
+  .grid_1_1 {
+    grid-template-columns: 1fr; /* Definerer kolonnebredden som 50% hver */
+  }
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 200px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .CTA_blå_container {
+    flex-direction: row; /* Viser knapperne ved siden af hinanden */
+    justify-content: center; /* Centrerer knapperne horisontalt */
+    gap: 20px; /* Afstand mellem knapperne */
+  }
+
+  .grid_1_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Definerer kolonnebredden */
+  }
+
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Definerer kolonnebredden som 50% hver */
+    img {
+      width: 100%;
+    }
+  }
+
+  .grid_1_1_1 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
