@@ -48,7 +48,7 @@ button.CTA_blå {
 
 .baggrundsbillede {
   position: relative; /* Gør det muligt at placere tekst over billedet */
-  background-image: url("../billeder/Index/index3.png"); /*Brug billedet som baggrund */
+  background-image: url("../imgs/forside2.png"); /*Brug billedet som baggrund */
   background-size: cover; /* Sørger for at billedet dækker hele containeren */
   background-position: center; /* Centrerer billedet */
   height: 500px; /* Højde på sektionen */
