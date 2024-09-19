@@ -108,7 +108,7 @@ button.CTA_blå {
 
 .kontaktinfo {
   color: #ffffff; /* Hvid tekstfarve */
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .kontakt_billede {
@@ -119,13 +119,13 @@ button.CTA_blå {
 }
 
 @media (max-width: 799px) {
-  h1 {
+  .index_h1 {
     font-size: 80px;
   }
-  h2 {
+  .index_h2 {
     font-size: 25px;
   }
-  p {
+  index_p {
     font-size: 15px;
   }
   .grid_1_2 {
@@ -137,13 +137,13 @@ button.CTA_blå {
 }
 
 @media (min-width: 800px) {
-  h1 {
+  .index_h1 {
     font-size: 200px;
   }
-  h2 {
+  .index_h2 {
     font-size: 35px;
   }
-  p {
+  .index_p {
     font-size: 20px;
   }
 
