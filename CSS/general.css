@@ -80,6 +80,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  a {
+    color: #ff671f;
+  }
 }
 
 header .logo img {
