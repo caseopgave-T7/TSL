@@ -1,0 +1,72 @@
+.back-to-top-btn {
+  width: 140px;
+  height: 45px;
+  font-weight: 150px; /* mellemting mellem normal (400) og fed (700)*/
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px; /*Skriftstørrelsen for knapteksten*/
+  letter-spacing: 2.5px; /* Afstanden mellem bogstaverne*/
+  font-weight: 500;
+  color: #591c16;
+  background-color: transparent;
+  border: none; /* Ingen kantlinje omkring knappen*/
+  border-radius: 0px; /*Ingen afrundede hjørner på knappen*/
+  transition: all 0.2s ease 0s; /*Animerer alle ændringer over 0,2 sekunder med en jævn overgang*/
+  cursor: pointer;
+  outline: none; /*Ingen ekstra kantlinje, når knappen er i fokus*/
+}
+
+.back-to-top-btn:hover {
+  background-color: transparent; /* Baggrundsfarven forbliver gennemsigtig, når man holder musen over knappen*/
+  color: #591c16;
+  transform: translateY(-5px); /*Flytter knappen 5 pixels opad, hvilket giver en  hævningseffekt, når man holder musen over knappen*/
+}
+/*Desktop*/
+
+.footer_3 {
+  background-color: #233248;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+.footer_underklasse {
+  padding: 20px;
+}
+.footer_underklasse h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+.footer_underklasse p {
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+i {
+  font-size: 40px;
+  margin-top: 10px;
+}
+/*Mobil*/
+@media (max-width: 768px) {
+  .footer_3 {
+    background-color: #233248;
+    color: white;
+
+    flex-direction: column;
+  }
+
+  .footer_underklasse h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .footer_underklasse p {
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+  }
+
+  i {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
