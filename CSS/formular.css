@@ -36,17 +36,19 @@ header{
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 200px;
   margin-bottom: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 
 p {
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 20px;
   color: rgb(35, 50, 72);
   line-height: 1.5;
+  font-family: Helvetica, sans-serif;
  
 }
 
@@ -78,6 +80,7 @@ input {
   border: none;
   border-radius: 5px;
   font-size: 14px;
+  font-family: Helvetica, sans-serif;
 }
 
 button {
@@ -95,11 +98,13 @@ button:hover {
   background-color: rgb(234, 80, 69); /* Mørkere orange ved hover */
 }
 
-/* Tablet og større skærmjusteringer */
-@media (min-width: 768px) {
-  h1 {
-      font-size: 84px;
+@media (max-width:799px){
+  h1{
+    font-size: 80px;
   }
+}
+/* Tablet og større skærmjusteringer */
+@media (min-width: 800px) {
 
   p {
       font-size: 24px;
