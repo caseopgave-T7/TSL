@@ -5,16 +5,16 @@ body {
   background-color: #4589d3;
   margin: 0;
 }
-h1 {
+.index_h1 {
   color: #233248;
 }
 
-h2 {
+.index_h2 {
   color: #ff671f;
   margin: 10px;
 }
 
-p {
+.index_p {
   color: #ff671f;
   margin: 10px;
 }
