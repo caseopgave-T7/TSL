@@ -13,6 +13,7 @@
   transition: all 0.2s ease 0s; /*Animerer alle ændringer over 0,2 sekunder med en jævn overgang*/
   cursor: pointer;
   outline: none; /*Ingen ekstra kantlinje, når knappen er i fokus*/
+  align-items: center;
 }
 
 .back-to-top-btn:hover {
@@ -69,4 +70,31 @@ i {
     font-size: 20px;
     margin-top: 20px;
   }
+}
+
+/* Styling af header */
+
+header {
+  background-color: #1a334b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  a {
+    color: #ff671f;
+  }
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 16px;
 }
