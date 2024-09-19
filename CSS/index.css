@@ -4,17 +4,18 @@ main {
 body {
   background-color: #4589d3;
   margin: 0;
+  font-family: Helvetica, sans-serif;
 }
-h1 {
+.index_h1 {
   color: #233248;
 }
 
-h2 {
+.index_h2 {
   color: #ff671f;
   margin: 10px;
 }
 
-p {
+.index_p {
   color: #ff671f;
   margin: 10px;
 }
@@ -47,7 +48,7 @@ button.CTA_blå {
 
 .baggrundsbillede {
   position: relative; /* Gør det muligt at placere tekst over billedet */
-  background-image: url("../billeder/Index/index3.png"); /*Brug billedet som baggrund */
+  background-image: url("../imgs/forside2.png"); /*Brug billedet som baggrund */
   background-size: cover; /* Sørger for at billedet dækker hele containeren */
   background-position: center; /* Centrerer billedet */
   height: 500px; /* Højde på sektionen */
@@ -76,7 +77,7 @@ button.CTA_blå {
 
 .baggrundsbillede_2 {
   position: relative; /* Gør det muligt at placere tekst over billedet */
-  background-image: url("../billeder/Index/indexbillede2.png"); /*Brug billedet som baggrund */
+  background-image: url("../imgs/forside4.png"); /*Brug billedet som baggrund */
   background-size: cover; /* Sørger for at billedet dækker hele containeren */
   background-position: center; /* Centrerer billedet */
   height: 500px; /* Højde på sektionen */
@@ -107,7 +108,7 @@ button.CTA_blå {
 
 .kontaktinfo {
   color: #ffffff; /* Hvid tekstfarve */
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .kontakt_billede {
@@ -118,13 +119,13 @@ button.CTA_blå {
 }
 
 @media (max-width: 799px) {
-  h1 {
+  .index_h1 {
     font-size: 80px;
   }
-  h2 {
+  .index_h2 {
     font-size: 25px;
   }
-  p {
+  index_p {
     font-size: 15px;
   }
   .grid_1_2 {
@@ -136,13 +137,13 @@ button.CTA_blå {
 }
 
 @media (min-width: 800px) {
-  h1 {
+  .index_h1 {
     font-size: 200px;
   }
-  h2 {
+  .index_h2 {
     font-size: 35px;
   }
-  p {
+  .index_p {
     font-size: 20px;
   }
 

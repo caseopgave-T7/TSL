@@ -13,6 +13,7 @@
   transition: all 0.2s ease 0s; /*Animerer alle ændringer over 0,2 sekunder med en jævn overgang*/
   cursor: pointer;
   outline: none; /*Ingen ekstra kantlinje, når knappen er i fokus*/
+  align-items: center;
 }
 
 .back-to-top-btn:hover {
@@ -79,7 +80,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  
 }
 
 header .logo img {
