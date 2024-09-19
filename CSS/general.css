@@ -70,3 +70,29 @@ i {
     margin-top: 20px;
   }
 }
+
+/* Styling af header */
+
+header {
+  background-color: #1A334B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 16px;
+}
+
