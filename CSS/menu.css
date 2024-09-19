@@ -3,7 +3,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 25px;
-  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,7 +34,7 @@ nav {
 .menu a {
   display: block;
   padding: 10px;
-  color: #333;
+ 
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
